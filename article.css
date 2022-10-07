@@ -1,0 +1,30 @@
+.container{
+    padding: 10px;
+}
+
+.star {
+    width: 12px;
+    height: 12px;
+}
+
+.thumbnail {
+    aspect-ratio: 16/9;
+    width: 230px;
+}
+
+.title{
+    height: 35px;
+}
+
+.description-container{
+    height: 70px;
+}
+
+.description {
+    width: 230px;
+    text-align: center;
+}
+
+.author-container{
+    height: 40px;
+}

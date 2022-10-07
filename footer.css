@@ -1,0 +1,21 @@
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+ul {
+    position: relative;
+    left: -20px;
+}

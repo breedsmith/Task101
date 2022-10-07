@@ -1,0 +1,62 @@
+.main{
+    display: grid;
+    grid-area: page;
+    background-color: white;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-rows: 60px 60px;
+    grid-template-areas:
+    "heading heading heading"
+    "filter filter filter"
+    "question question question"
+    ;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    grid-area: heading;
+}
+
+.filter{
+    grid-area: filter;
+}
+
+select{
+    appearance: none;
+    background-color: grey;
+    padding-left: 50px;
+    height: 40px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: solid 2px black;
+    margin: 10px;
+    margin-left: 40px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+#search-bar-filter{
+    height: 40px;
+    width: 80%;
+    font-size: 20px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    padding-left: 50px; /*makes placeholder move more right so it doesn't overlap with image*/
+    border: solid 2px grey;
+ }
+
+ .QuestionCards{
+    grid-area: question;
+    display: grid;
+    grid-template-columns: 1fr;
+ }

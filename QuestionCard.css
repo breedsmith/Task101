@@ -1,0 +1,81 @@
+.QuestionCard{
+    background-color: whitesmoke;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 90px 30px;
+    grid-template-areas:
+    "qTitle qTitle qTitle delete"
+    "question question question question"
+    "author author author more"
+    ;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questionTitle{
+    grid-area: qTitle;
+    background-color: rgb(155, 150, 150);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#question-text{
+    height:40px;
+    margin: 0;
+}
+
+.delete{
+    grid-area: delete;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(155, 150, 150);
+}
+
+.delete > button{
+    width: 40px;
+    height: 40px;
+}
+
+.question{
+    grid-area: question;
+}
+
+.question > p{
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.author{
+    grid-area: author;
+}
+
+.author > p{
+    height: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.more{
+    grid-area: more;
+    width: 100%;
+}
+
+#see-more{
+    background-color: transparent;
+}

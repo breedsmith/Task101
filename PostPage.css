@@ -1,0 +1,53 @@
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  .App{
+    display: grid;
+    grid-area: page;
+    background-color: white;
+  }
+
+  .Header{
+    background-color: grey;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Article{
+    background-color: blanchedalmond;
+  }
+
+  .Question{
+    background-color: blanchedalmond;
+  }
+
+  .Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input{
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .App > button{
+    border: none;
+    background-color: grey;
+    padding: 10px;
+    width: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+
+  .fileSelect{
+    font-weight: bold;
+    margin-right: 10px;
+    height:25px;
+  }

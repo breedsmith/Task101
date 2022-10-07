@@ -1,0 +1,24 @@
+.login{
+  grid-area: page;
+  background-color: white;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email{
+  grid-area: email;
+}
+
+button {
+width: 100px;
+background-color: grey;
+border: none;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 10px;
+}

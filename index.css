@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 60px 1090px 60px 360px;*/
+  grid-template-areas:
+  "nav nav nav"
+  "page page page"
+  "signup signup signup"
+  "foot foot foot";
+}
+
+.nav{
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 0.3fr 1.1fr 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 60px;
+  background-color: rgb(155, 150, 150);
+}
+
+.page{
+  grid-area: page;
+  display: grid;
+}
+
+.signup{
+  grid-area: signup;
+  display: grid;
+  grid-template-rows: 60px;
+  background-color: rgb(155, 150, 150);
+}
+
+.foot{
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+  background-color: rgb(91, 88, 88);
+}
+
+button{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .Container {
+    grid-template-columns: 1fr;
+    /*grid-template-rows: 60px 2140px 90px 380px;*/
+  }
+  .page{
+    grid-template-columns: 1fr;
+  }
+  .nav{
+    grid-template-rows: 60px;
+  }
+  .signup{
+    grid-template-rows: 90px;
+  }
+  .foot{
+    grid-template-rows: 200px;
+  }
+}
